@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "author": "sayem",
+        "title": "How do you Start your programming journy",
+        "blog_img": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=1060&t=st=1680196052~exp=1680196652~hmac=510dd102018a7b018bab0124b2fcff862d5400d49d158034889082d140872efe",
+        "author_img" : "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "read_time" : "5",
+        "published" : "15/2/21"
+    },
+    {
+        "id": 2,
+        "author": "Aiman",
+        "title": "How do you Start C programming",
+        "blog_img": "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=1060&t=st=1680196543~exp=1680197143~hmac=f1012183c6d055eec4688bbf26fb51a66fe97e8dae8eb6d8966647f7060e9e17",
+        "author_img" : "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "read_time" : "9",
+        "published" : "15/3/21"
+    },
+    {
+        "id": 3,
+        "author": "simran",
+        "title": "How to learn Java",
+        "blog_img": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010142.jpg?w=1060&t=st=1680196614~exp=1680197214~hmac=5e073f4b204b43da256c6f9209b6492dc6c469348b149a5da5551beecd159882",
+        "author_img" : "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+        "read_time" : "3",
+        "published" : "15/2/22"
+    },
+    {
+        "id": 4,
+        "author": "tanvir",
+        "title": "How to start competitive programming",
+        "blog_img": "https://img.freepik.com/free-photo/coding-man_1098-18084.jpg?w=1060&t=st=1680196730~exp=1680197330~hmac=bacde5c33f05ffc51059f9de171a96197c77b24c04adc12e47d55955d7bf4c53",
+        "author_img" : "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "read_time" : "11",
+        "published" : "15/2/23"
+    }
+
+
+]
