@@ -1,0 +1,27 @@
+import React from 'react';
+
+const SingleCart = (props) => {
+    console.log(props);
+    const { blog_img,title,author_img,read_time,published,author} = props.card
+    return (
+        <div className='  my-12 '>
+            <img className='w-full' src={blog_img} alt="" />
+            <div className='flex justify-between my-7 items-center gap-5 '> 
+                <div className='flex gap-3 items-center'>
+                    <img className='w-12 h-12 rounded-full' src={author_img} alt="" />
+                    <div>
+                        <p className='font-bold'>{author}</p>
+                        <p>published : {published}</p>
+                    </div>
+                </div>
+                <div className=''>
+                    <p>read time : {read_time}</p>
+                </div>
+            </div>
+            <h1 className='text-3xl font-bold my-3'>{title}</h1>
+            <a  className='underline text-blue-600' href="">Mark as read</a>
+        </div>
+    );
+};
+
+export default SingleCart;
