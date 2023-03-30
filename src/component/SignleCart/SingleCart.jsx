@@ -1,8 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const SingleCart = (props) => {
-    console.log(props);
+    // console.log(props);
     const { blog_img,title,author_img,read_time,published,author} = props.card
+    const handleCart = props.handleCart
     return (
         <div className='  my-12 '>
             <img className='w-full' src={blog_img} alt="" />
@@ -15,7 +18,7 @@ const SingleCart = (props) => {
                     </div>
                 </div>
                 <div className=''>
-                    <p>read time : {read_time}</p>
+                    <p>read time : {read_time} <FontAwesomeIcon onClick={()=>handleCart(title)} icon={faBookmark} /></p>
                 </div>
             </div>
             <h1 className='text-3xl font-bold my-3'>{title}</h1>

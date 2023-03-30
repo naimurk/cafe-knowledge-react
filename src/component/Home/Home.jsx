@@ -10,10 +10,18 @@ const Home = () => {
         .then(data => setCardData(data))
     },[])
     
+    const [card , setCard] = useState([])
+    const handleCart = (name) => {
+        const newCard = [...card,name]
+        setCard(newCard)
+    }
+
+    
+    
     return (
         <div className='lg:flex lg:gap-8'>
-            <Card cardData = {cardData}></Card>
-            <SideCart></SideCart>
+            <Card handleCart = {handleCart} cardData = {cardData}></Card>
+            <SideCart card = {card} ></SideCart>
         </div>
     );
 };
