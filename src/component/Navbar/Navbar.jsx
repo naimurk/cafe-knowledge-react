@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className='border-b'>
             <div className="navbar w-full bg-base-100">
                 <div className="flex-1">
-                    <a className="btn font-semibold  btn-ghost normal-case text-xl lg:text-2xl">Programming Blogs</a>
+                    <a className="btn font-semibold text-blue-600 btn-ghost normal-case text-2xl lg:text-3xl">Programming Blogs</a>
                 </div>
                 <div className="flex-none gap-2">
                     <div className="form-control">
