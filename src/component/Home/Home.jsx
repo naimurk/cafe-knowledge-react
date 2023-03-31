@@ -13,11 +13,24 @@ const Home = () => {
     const [cards , setCard] = useState([])
     const [Time , setTime] = useState(0)
     
+    
 
     const handleCart = (name , time) => {
-        const newCard = [...cards,name]
-        setCard(newCard)
-        setTime( parseInt(time) + parseInt(Time))
+        
+        const existingItem = cards.find((item) => item === name);
+        if (!existingItem) {
+          const newCard = [...cards, name];
+          setCard(newCard);
+          setTime(parseInt(time) + parseInt(Time));
+        }
+        else{
+            alert('product added')
+        }
+        // const newCard = [...cards,name]
+        // setCard(newCard)
+        // setTime( parseInt(time) + parseInt(Time))
+
+      
     }
 
     const handleIncrease = (newTime) => {

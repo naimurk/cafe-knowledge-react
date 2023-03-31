@@ -7,6 +7,10 @@ const SingleCart = (props) => {
     const { blog_img,title,author_img,read_time,published,author} = props.card
     const handleCart = props.handleCart
     const handleIncrease = props.handleIncrease
+
+    
+
+  
     return (
         <div className='  my-12 '>
             <img className='w-full' src={blog_img} alt="" />

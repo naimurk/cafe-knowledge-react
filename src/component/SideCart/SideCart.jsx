@@ -2,7 +2,7 @@ import React from 'react';
 import SingleSideCart from '../SingleSideCart/SingleSideCart';
 
 const SideCart = (props) => {
-    console.log(props);
+    // console.log(props);
     const cards = props.card
     const time = props.time
     
