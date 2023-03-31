@@ -18,7 +18,7 @@ const SingleCart = (props) => {
                     </div>
                 </div>
                 <div className=''>
-                    <p>read time : {read_time} <FontAwesomeIcon onClick={()=>handleCart(title)} icon={faBookmark} /></p>
+                    <p>read time : {read_time} <FontAwesomeIcon onClick={()=>handleCart(title,read_time)} icon={faBookmark} /></p>
                 </div>
             </div>
             <h1 className='text-3xl font-bold my-3'>{title}</h1>
