@@ -6,6 +6,7 @@ const SingleCart = (props) => {
     // console.log(props);
     const { blog_img,title,author_img,read_time,published,author} = props.card
     const handleCart = props.handleCart
+    const handleIncrease = props.handleIncrease
     return (
         <div className='  my-12 '>
             <img className='w-full' src={blog_img} alt="" />
@@ -22,7 +23,7 @@ const SingleCart = (props) => {
                 </div>
             </div>
             <h1 className='text-3xl font-bold my-3'>{title}</h1>
-            <a  className='underline text-blue-600' href="">Mark as read</a>
+            <a onClick={()=> handleIncrease(read_time)} className='underline text-blue-600 cursor-pointer' >Mark as read</a>
         </div>
     );
 };

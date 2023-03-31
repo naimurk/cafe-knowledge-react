@@ -17,18 +17,22 @@ const Home = () => {
     const handleCart = (name , time) => {
         const newCard = [...cards,name]
         setCard(newCard)
-        const updatatime = Time + time
-        setTime(updatatime)
-        console.log(time);
+        setTime( parseInt(time) + parseInt(Time))
     }
 
+    const handleIncrease = (newTime) => {
+        const updateTime = parseInt(Time) - parseInt(newTime);
+        setTime(updateTime)
+    }
+    
+    // console.log(Time);
     // console.log(cards);
     
     return (
         <div className='lg:flex lg:gap-8'>
-            <Card handleCart = {handleCart} cardData = {cardData}></Card>
+            <Card handleIncrease = {handleIncrease} handleCart = {handleCart} cardData = {cardData}></Card>
             
-             <SideCart card = {cards}></SideCart>
+             <SideCart time = {Time} card = {cards}></SideCart>
             
         </div>
     );
