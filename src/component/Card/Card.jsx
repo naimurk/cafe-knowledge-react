@@ -9,7 +9,7 @@ const Card = (props) => {
     // console.log(card);
     // console.log(cardData,handleCart);
     return (
-        <div className='w-8/12'>
+        <div className=' w-full lg:w-8/12'>
             {
                 cards.map(card => <SingleCart
                      key = {card}

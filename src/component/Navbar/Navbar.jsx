@@ -2,14 +2,14 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='border-b p-5'>
-            <div className="navbar  bg-base-100">
+        <div className='border-b'>
+            <div className="navbar w-full bg-base-100">
                 <div className="flex-1">
-                    <a className="btn font-semibold  btn-ghost normal-case text-2xl">Programming Blogs</a>
+                    <a className="btn font-semibold  btn-ghost normal-case text-xl lg:text-2xl">Programming Blogs</a>
                 </div>
                 <div className="flex-none gap-2">
                     <div className="form-control">
-                        <input type="text" placeholder="Search" className="input input-bordered" />
+                        {/* <input  type="text" placeholder="Search" className="input input-bordered" /> */}
                     </div>
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

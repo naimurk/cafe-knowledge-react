@@ -12,7 +12,7 @@ const SingleCart = (props) => {
 
   
     return (
-        <div className='  my-12 '>
+        <div className='  p-5 lg:p-0 my-14 '>
             <img className='w-full' src={blog_img} alt="" />
             <div className='flex justify-between my-7 items-center gap-5 '> 
                 <div className='flex gap-3 items-center'>
@@ -26,7 +26,7 @@ const SingleCart = (props) => {
                     <p>read time : {read_time} <FontAwesomeIcon onClick={()=>handleCart(title,read_time)} icon={faBookmark} /></p>
                 </div>
             </div>
-            <h1 className='text-3xl font-bold my-3'>{title}</h1>
+            <h1 className='lg:text-3xl text:-2xl font-bold my-3'>{title}</h1>
             <a onClick={()=> handleIncrease(read_time)} className='underline text-blue-600 cursor-pointer' >Mark as read</a>
         </div>
     );

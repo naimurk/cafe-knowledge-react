@@ -52,10 +52,11 @@ const Home = () => {
     // console.log(cards);
     
     return (
-        <div className='lg:flex lg:gap-8'>
+        <div className='lg:flex pb-12 lg:gap-8'>
             <Card handleIncrease = {handleIncrease} handleCart = {handleCart} cardData = {cardData}></Card>
             
              <SideCart time = {Time} card = {cards}></SideCart>
+             
              <ToastContainer />
             
         </div>
