@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import SideCart from '../SideCart/SideCart';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Home = () => {
     const [cardData , setCardData] = useState([])
     useEffect(()=>{
@@ -21,20 +24,27 @@ const Home = () => {
         if (!existingItem) {
           const newCard = [...cards, name];
           setCard(newCard);
-          setTime(parseInt(time) + parseInt(Time));
+          
+        //   setTime(parseInt(time) + parseInt(Time));
         }
         else{
-            alert('product added')
+            toast("Item already exist");
+
+           // ar jodi product add korthe na cai eto tok 
+
+        //     const newCard = [...cards, name];
+        //   setCard(newCard);
+        //   setTime(parseInt(time) + parseInt(Time));
         }
-        // const newCard = [...cards,name]
-        // setCard(newCard)
-        // setTime( parseInt(time) + parseInt(Time))
+      
 
       
     }
 
     const handleIncrease = (newTime) => {
-        const updateTime = parseInt(Time) - parseInt(newTime);
+        
+        const updateTime = parseInt(Time) + parseInt(newTime);
+        
         setTime(updateTime)
     }
     
@@ -46,6 +56,7 @@ const Home = () => {
             <Card handleIncrease = {handleIncrease} handleCart = {handleCart} cardData = {cardData}></Card>
             
              <SideCart time = {Time} card = {cards}></SideCart>
+             <ToastContainer />
             
         </div>
     );
